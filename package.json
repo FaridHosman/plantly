@@ -10,7 +10,14 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js,.jsx .",
     "prebuild:android": "npx expo prebuild --platform android",
-    "prebuild:ios": "npx expo prebuild --platform ios"
+    "prebuild:ios": "npx expo prebuild --platform ios",
+    "eas": "npx eas-cli@latest",
+    "eas:login": "npx eas-cli@latest login",
+    "eas:init": "npx eas-cli@latest init",
+    "eas:configure": "npx eas-cli@latest build:configure",
+    "eas:android": "npx eas-cli@latest build --platform android",
+    "eas:android-dev": "npx eas-cli@latest build --platform android --profile development",
+    "eas:android-preview": "npx eas-cli@latest build --platform android --profile preview"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
@@ -32,7 +39,8 @@
     "react-native-safe-area-context": "4.12.0",
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
-    "zustand": "^5.0.3"
+    "zustand": "^5.0.3",
+    "expo-dev-client": "~5.0.10"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
