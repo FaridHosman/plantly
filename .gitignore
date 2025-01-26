@@ -33,4 +33,8 @@ yarn-error.*
 .env*.local
 
 # typescript
-*.tsbuildinfo
+*.tsbuildinfo\
+
+# build output
+android/
+ios/
