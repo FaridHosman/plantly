@@ -1,34 +1,57 @@
 {
   "expo": {
-    "name": "plantly",
+    "name": "Plantly",
     "slug": "plantly",
     "scheme": "plantly",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expokadi.plantly"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.plantly"
+      "package": "com.expokadi.plantly"
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#9CF089",
+          "image": "./assets/splash-image.png",
+          "dark": {
+            "image": "./assets/splash-image.png",
+            "backgroundColor": "#56A082"
+          },
+          "imageWidth": 150
+        }
+      ],
+      [
+        "expo-quick-actions",
+        {
+          "androidIcons": {
+            "leaf": {
+              "foregroundImage": "./assets/leaf.png",
+              "backgroundColor": "#ffffff"
+            }
+          }
+        }
+      ]
     ],
     "extra": {
       "router": {
@@ -37,7 +60,6 @@
       "eas": {
         "projectId": "56ecaecd-0003-4946-809c-3f58932a37ae"
       }
-    },
-    "owner": "faridhosman"
+    }
   }
 }
